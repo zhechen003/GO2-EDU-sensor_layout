@@ -41,6 +41,13 @@ The design separates the camera mount, LiDAR mount, quick-release adapter, and G
 4. Install the RealSense camera and Mid-360 LiDAR, then verify that brackets, cables, and the robot body do not obstruct their fields of view.
 5. Route and secure all sensor cables with enough slack to prevent interference during robot motion.
 
+## Used in Research Projects
+
+This sensor configuration has been used in the following GO2 research systems:
+
+- **[SCAN-Planner](https://github.com/wuyi2121/SCAN-Planner)** — *Spatial Collision-Aware Local Planning for Route-Guided Long-Range Quadruped Navigation*. [Paper (arXiv:2606.19555)](https://arxiv.org/abs/2606.19555)
+- **[TravExplorer](https://github.com/wuyi2121/TravExplorer)** — *Cross-Floor Embodied Exploration via Traversability-Aware 3D Planning*. [Paper (arXiv:2605.19958)](https://arxiv.org/abs/2605.19958)
+
 ## Manufacturing and Editing
 
 - Use the `.STL` files for 3D-printing trials.

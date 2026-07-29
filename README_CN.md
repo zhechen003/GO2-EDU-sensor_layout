@@ -41,6 +41,13 @@
 4. 安装 RealSense 相机与 Mid-360 后，检查支架、线缆和机身不会遮挡传感器视野。
 5. 整理并固定传感器线缆，为机器人运动预留足够余量，避免发生干涉。
 
+## 已采用本构型的研究工作
+
+本套传感器构型已用于以下 GO2 研究系统：
+
+- **[SCAN-Planner](https://github.com/wuyi2121/SCAN-Planner)** —— 面向长距离四足机器人导航的空间碰撞感知局部规划方法。[论文（arXiv:2606.19555）](https://arxiv.org/abs/2606.19555)
+- **[TravExplorer](https://github.com/wuyi2121/TravExplorer)** —— 面向跨楼层具身探索的可通行性感知三维规划方法。[论文（arXiv:2605.19958）](https://arxiv.org/abs/2605.19958)
+
 ## 制造与修改
 
 - 使用 `.STL` 文件进行 3D 打印验证。
