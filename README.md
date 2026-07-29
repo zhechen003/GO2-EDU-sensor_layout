@@ -1,51 +1,52 @@
-# GO2 EDU 3D 传感器布局与安装套件
+# GO2 EDU Sensor Layout & Quick-Release Mounting Kit
 
-本仓库提供一套面向 **Unitree GO2 EDU** 的 3D 传感器布局与安装结构，用于将 **Intel RealSense 深度相机** 和 **Livox Mid-360 激光雷达** 集成到机器人头部区域。
+<p align="center">
+  <img src="assets/go2-edu-sensor-layout.png" alt="GO2 EDU RealSense and Mid-360 sensor layout" width="760">
+</p>
 
-设计以轻量、稳固、易维护为目标，采用模块化结构与快拆装接口，便于根据任务需求快速安装、移除或更换传感器组件。
+<p align="center">
+  <strong>English</strong> · <a href="README_CN.md">中文</a>
+</p>
 
-## 功能特点
+This repository contains a modular 3D sensor-layout and mounting kit for the **Unitree GO2 EDU**. It integrates an **Intel RealSense depth camera** and a **Livox Mid-360 LiDAR** into a compact head-mounted assembly.
 
-- **双传感器集成**：为 RealSense 深度相机与 Mid-360 激光雷达提供专用安装位。
-- **3D 感知布局**：兼顾相机视场、激光雷达视野以及与 GO2 EDU 机身的空间关系。
-- **模块化设计**：相机支架、雷达支架、头部安装件和连接转接件可独立拆装与更换。
-- **快拆装能力**：基于快拆转接结构，方便在调试、运输和不同任务载荷之间快速切换。
-- **可制造文件齐全**：提供 SolidWorks 源文件、STL 打印文件及部分 STEP 交换格式文件。
+The design separates the camera mount, LiDAR mount, quick-release adapter, and GO2 EDU mounting structure so that sensing hardware can be installed, removed, and reconfigured quickly for development, transport, or different payload setups.
 
-## 文件说明
+> 中文说明请参阅 [README_CN.md](README_CN.md)。
 
-| 文件 | 用途 |
+## Highlights
+
+- **Dual-sensor integration** — Dedicated mounting points for a RealSense depth camera and a Mid-360 LiDAR.
+- **3D perception-oriented layout** — Designed to account for camera field of view, LiDAR coverage, and clearance from the robot body.
+- **Modular architecture** — Individual camera, LiDAR, head-mount, and adapter components can be serviced or replaced independently.
+- **Quick-release workflow** — Uses a quick-release adapter for fast installation and removal during testing, transport, and payload changes.
+- **Manufacturing-ready assets** — Includes SolidWorks source parts, STL files for 3D printing, and a STEP exchange file.
+
+## Repository Contents
+
+| File | Description |
 | --- | --- |
-| `Go2EDU-head.SLDPRT` / `Go2EDU-head.STL` | GO2 EDU 头部/主体安装件 |
-| `camera_support.SLDPRT` / `camera_support.STL` | 相机支撑结构 |
-| `realsense_support.SLDPRT` / `realsense_support.STL` | RealSense 相机专用安装件 |
-| `lidarsupport1.SLDPRT` / `lidarsupport1.STL` | Mid-360 激光雷达安装支架 |
-| `arc-swiss.SLDPRT` / `arc-swiss.STL` | 快拆转接件 |
-| `backborad1.SLDPRT` / `backborad1.STEP` | 后部连接板/安装板 |
+| `Go2EDU-head.SLDPRT` / `Go2EDU-head.STL` | GO2 EDU head / primary mounting structure |
+| `camera_support.SLDPRT` / `camera_support.STL` | Camera support structure |
+| `realsense_support.SLDPRT` / `realsense_support.STL` | RealSense camera mounting part |
+| `lidarsupport1.SLDPRT` / `lidarsupport1.STL` | Mid-360 LiDAR mounting bracket |
+| `arc-swiss.SLDPRT` / `arc-swiss.STL` | Quick-release adapter |
+| `backborad1.SLDPRT` / `backborad1.STEP` | Rear connection / mounting plate |
 
-## 安装建议
+## Installation Overview
 
-1. 使用 `Go2EDU-head` 将整套结构固定到 GO2 EDU 对应安装位置。
-2. 将 `arc-swiss` 快拆转接件与主体安装件连接，并确认锁紧可靠。
-3. 按传感器类型分别安装 `realsense_support` 与 `lidarsupport1`。
-4. 安装 RealSense 相机和 Mid-360 后，检查其视野是否被支架、线缆或机身遮挡。
-5. 整理传感器线缆并预留活动余量，确认机器人运动时不会发生干涉。
+1. Secure `Go2EDU-head` to the intended GO2 EDU mounting location.
+2. Attach and lock the `arc-swiss` quick-release adapter.
+3. Fit `realsense_support` and `lidarsupport1` to their respective mounting positions.
+4. Install the RealSense camera and Mid-360 LiDAR, then verify that brackets, cables, and the robot body do not obstruct their fields of view.
+5. Route and secure all sensor cables with enough slack to prevent interference during robot motion.
 
-> 请在开机运行前复核紧固件、载荷重心、线缆固定和传感器视野。实际安装尺寸、紧固件规格及线缆走线应以所使用的 GO2 EDU、RealSense 和 Mid-360 型号为准。
+## Manufacturing and Editing
 
-## 使用与制造
+- Use the `.STL` files for 3D-printing trials.
+- Edit the `.SLDPRT` source files in SolidWorks to adapt dimensions or interfaces.
+- Use `backborad1.STEP` to exchange the rear plate with other CAD tools or assemblies.
 
-- 可直接使用 `.STL` 文件进行 3D 打印验证。
-- 可使用 SolidWorks 打开 `.SLDPRT` 文件进行尺寸调整或二次设计。
-- `backborad1.STEP` 可用于与其他 CAD 软件或总装模型交换。
+## Safety and Compatibility
 
-## 适用场景
-
-- 室内外自主导航与建图
-- 多传感器融合定位
-- 三维环境感知与避障
-- GO2 EDU 研究、教学与原型开发
-
-## 许可与使用说明
-
-本仓库用于分享 GO2 EDU 的传感器布局与安装结构。使用、修改或制造前，请自行确认其与机器人、传感器及周边设备的机械兼容性与使用安全。
+Before operating the robot, inspect fasteners, cable routing, payload balance, and sensor visibility. Confirm all mechanical dimensions, fastener specifications, cable routing, and electrical interfaces against the exact GO2 EDU, RealSense, and Mid-360 hardware in use.
