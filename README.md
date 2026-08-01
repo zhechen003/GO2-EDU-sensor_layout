@@ -41,6 +41,18 @@ The design separates the camera mount, LiDAR mount, quick-release adapter, and G
 4. Install the RealSense camera and Mid-360 LiDAR, then verify that brackets, cables, and the robot body do not obstruct their fields of view.
 5. Route and secure all sensor cables with enough slack to prevent interference during robot motion.
 
+## Assembly Hardware List
+
+| Feature / Location | Hardware | Quantity / Usage |
+| --- | --- | --- |
+| 4 mm holes | M3×5 土八 heat-set inserts | 19 pcs |
+| 3.2 mm holes | M3×8 screws | 10 pcs |
+| 3.2 mm holes | M3×15 screws | 8 pcs |
+| Rear plate | M3×85 screws | 4 pcs, for rear plate fixation |
+| Rear-plate rail | Black long screws | For the four front dog-head fixation points |
+
+Install the heat-set inserts in the 4 mm holes and use the M3 screws in the 3.2 mm holes as indicated above. Verify the actual screw length and thread engagement before final tightening.
+
 ## Used in Research Projects
 
 This sensor configuration has been used in the following GO2 research systems:
