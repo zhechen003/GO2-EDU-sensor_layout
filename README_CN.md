@@ -66,6 +66,15 @@
 - 使用 SolidWorks 打开 `.SLDPRT` 文件，按需调整尺寸或接口。
 - 使用 `backborad1.STEP` 与其他 CAD 软件或总装模型交换后部连接板。
 
+## 作者与许可证
+
+维护者：[zhechen003](https://github.com/zhechen003)。
+
+本仓库中的硬件设计文件采用
+[CERN Open Hardware Licence Version 2 – Permissive](LICENSE)（CERN-OHL-P-2.0）许可。
+
+版权所有 (c) 2026 zhechen003。
+
 ## 安全与兼容性
 
 运行机器人前，请检查紧固件、线缆走线、载荷重心和传感器视野。机械尺寸、紧固件规格、线缆走线和电气接口应以实际使用的 GO2 EDU、RealSense 和 Mid-360 硬件为准。

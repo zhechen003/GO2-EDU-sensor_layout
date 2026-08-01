@@ -66,6 +66,15 @@ This sensor configuration has been used in the following GO2 research systems:
 - Edit the `.SLDPRT` source files in SolidWorks to adapt dimensions or interfaces.
 - Use `backborad1.STEP` to exchange the rear plate with other CAD tools or assemblies.
 
+## Author and License
+
+Maintained by [zhechen003](https://github.com/zhechen003).
+
+The hardware design files in this repository are licensed under the
+[CERN Open Hardware Licence Version 2 – Permissive](LICENSE).
+
+Copyright (c) 2026 zhechen003.
+
 ## Safety and Compatibility
 
 Before operating the robot, inspect fasteners, cable routing, payload balance, and sensor visibility. Confirm all mechanical dimensions, fastener specifications, cable routing, and electrical interfaces against the exact GO2 EDU, RealSense, and Mid-360 hardware in use.
